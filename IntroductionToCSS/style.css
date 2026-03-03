@@ -1,0 +1,39 @@
+/*  Universal Selector */
+*{
+    background-color: rgb(48, 93, 132);
+    
+} 
+
+
+div /*  Tag selector */
+{
+    background-color: bisque;
+}
+
+
+/* Class Selector */
+.abc
+{
+    background-color: burlywood;
+    color: azure;  /* changes the color the text */
+    border: 6px double black;  /*changes the border thickness type color in this order only */
+    border-radius:25px;  /*changes the smoothness of the corners*/
+
+}
+
+
+/* .abc  priority of the next one is greater than the above one 
+{
+    background-color: burlywood;
+} */
+
+.def
+{
+    background-color: chocolate;
+}
+
+/* Id Selector */
+#header
+{
+    background-color: darkgoldenrod;
+}
