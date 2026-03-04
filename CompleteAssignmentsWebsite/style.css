@@ -1,0 +1,62 @@
+body {
+  background-color: #e3dbbb;
+}
+
+fieldset {
+  background-color: #aeb784;
+  color: #41431b;
+}
+h1 {
+  color: #41431b;
+}
+
+legend {
+  color: #41431b;
+}
+
+.ab {
+  background-color: rgba(34, 21, 46, 0);
+  color: #4f533d;
+  text-decoration-line: underline;
+}
+
+.cd {
+  color: #41431b;
+}
+.cd:hover {
+  background-color: #5f644832;
+  color: #e3dbbb;
+}
+
+a {
+  color: #4f533d;
+}
+a:hover {
+  color: #e3dbbb;
+}
+
+#rmk {
+  background-color: #e3dbbb;
+}
+button {
+  border-radius: 35px;
+  background-color: #dfc5a9;
+  box-sizing: border-box;
+}
+button:hover {
+  background-color: #4a4034;
+  color: #bfa181;
+}
+
+footer img {
+  border-radius: 70%;
+  object-fit: cover;
+  border: 3px solid #4a4034;
+  margin-bottom: 10px;
+}
+
+.ef:hover {
+  background-blend-mode: difference;
+  color: #010101;
+  background-blend-mode: color-burn;
+}
