@@ -1,0 +1,36 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.a {
+  width: 200px;
+  height: 200px;
+}
+
+#mydiv,
+#mydiv2,
+#mydiv3 {
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+#mydiv2
+{
+    display: none;
+}
+
+#myspan , #myspan2 , #myspan3
+{
+    background-color: burlywood;
+    border: 2px solid black;
+}
+
+#myspan2
+{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
