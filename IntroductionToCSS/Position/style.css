@@ -1,0 +1,14 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.head
+{
+    position: sticky;
+    top: 10px;
+    background-color: rgb(162, 238, 213);
+    border-radius: 20px;
+    padding: 10px;
+
+}
