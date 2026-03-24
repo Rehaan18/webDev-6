@@ -15,7 +15,7 @@ body {
     background: white;
 }
 
-/* LEFT SIDEBAR */
+
 .sidebar {
     width: 30%;
     background: #2f3e4e;
@@ -57,12 +57,12 @@ body {
     margin-bottom: 5px;
 }
 
-/* RIGHT PANEL */
+
 .main {
     width: 70%;
     padding: 30px;
 }
-
+    
 .main h2 {
     color: #2f3e4e;
     margin-bottom: 10px;
