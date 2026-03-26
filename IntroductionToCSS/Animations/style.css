@@ -1,0 +1,76 @@
+#div1
+{
+    width: 80px;
+    height: 20px;
+    border: 2px solid black;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+#div1:hover
+{
+    width: 300px;
+     transition: width 1.5s ease-in-out 1s;  /* where do you wanna put animation and time length of the animation and type and delay */
+}
+
+/* #card skew
+{
+    margin: auto;
+    width: 200px;
+    height: 400px;
+    border: 2px solid black;
+    transform: skew(0deg.0deg);
+    transition: transform 2s linear ;
+}
+
+#card:hover
+{
+    transform: skew(180deg,45deg);
+    transition: transform 2s linear ;
+} */
+/* #card
+{
+    margin: auto;
+    width: 200px;
+    height: 400px;
+    border: 2px solid black;
+    transform: translate(0.0);
+    transition: transform 1s linear ;
+}
+
+#card:hover
+{
+    transform: translate(20px,20px);
+    transition: transform 1s linear ;
+} */
+/* #card scale
+{
+    margin: auto;
+    width: 200px;
+    height: 400px;
+    border: 2px solid black;
+    transform: scale(1,1);
+    transition: transform 2s linear ;
+}
+
+#card:hover
+{
+    transform: scale(1.5,1.5);
+    transition: transform 2s linear ;
+} */
+#card  
+{
+    margin: auto;
+    width: 200px;
+    height: 400px;
+    border: 2px solid black;
+    transform: rotateX(0deg);
+    transition: transform 2s linear ;
+}
+
+#card:hover
+{
+    transform: rotateX(180deg);
+    transition: transform 2s linear ;
+}
+
