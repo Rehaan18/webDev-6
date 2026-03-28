@@ -1,0 +1,40 @@
+:root
+{
+    --primary-color : darkorange;
+    --secondary-color : lightblue;
+    --text-color: white;
+}
+
+
+h1
+{
+    background-color: var(--primary-color);
+    color: White;
+}
+p
+{
+    background-color: lightgreen;
+}
+
+td
+{
+    color: rgb(76, 127, 0);
+}
+button
+{
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+#login
+{
+    background-color: orange;
+    color: white;
+}
+
+#register
+{
+    background-color: lightgreen;
+    color: rgb(0, 0, 0);
+}
