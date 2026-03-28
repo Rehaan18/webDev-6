@@ -1,62 +1,236 @@
+/* ================= ROOT VARIABLES ================= */
+:root {
+  --bg-main: #0f172a;
+  --bg-secondary: #020617;
+  --bg-card: #1e293b;
+
+  --gradient-main: linear-gradient(135deg, #3b82f6, #a855f7);
+  --gradient-green: linear-gradient(135deg, #22c55e, #16a34a);
+  --gradient-orange: linear-gradient(135deg, #f97316, #ea580c);
+  --gradient-purple: linear-gradient(135deg, #a855f7, #9333ea);
+  --gradient-pink: linear-gradient(135deg, #ec4899, #db2777);
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --accent: #3b82f6;
+  --hover: #334155;
+
+  --radius: 14px;
+  --transition: 0.3s ease;
+}
+
+/* ================= GLOBAL ================= */
 body {
-  background-color: #e3dbbb;
+  background: linear-gradient(135deg, var(--bg-main), var(--bg-secondary));
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text-main);
+  margin: 0;
+  padding: 20px;
+
+  animation: fadeIn 1s ease-in;
 }
 
-fieldset {
-  background-color: #aeb784;
-  color: #41431b;
-}
+/* ================= TITLE ================= */
 h1 {
-  color: #41431b;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  animation: slideDown 1s ease;
+  transition: var(--transition);
 }
 
+h1:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FIELDSET (CARD) ================= */
+fieldset {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.05);
+  margin-bottom: 25px;
+  padding: 20px;
+
+  animation: fadeUp 0.8s ease;
+  transition: var(--transition);
+}
+
+fieldset:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* ================= LEGEND ================= */
 legend {
-  color: #41431b;
+  color: var(--accent);
+  font-weight: bold;
 }
 
+/* ================= TABLE ================= */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+/* HEADER */
 .ab {
-  background-color: rgba(34, 21, 46, 0);
-  color: #4f533d;
-  text-decoration-line: underline;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* ROWS */
 .cd {
-  color: #41431b;
+  transition: var(--transition);
 }
+
+/* ROW HOVER */
 .cd:hover {
-  background-color: #5f644832;
-  color: #e3dbbb;
+  background: var(--hover);
+  transform: scale(1.01);
 }
 
+/* ================= COLORED ROWS ================= */
+.green-card { background: var(--gradient-green); }
+.orange-card { background: var(--gradient-orange); }
+.purple-card { background: var(--gradient-purple); }
+.pink-card { background: var(--gradient-pink); }
+
+/* ================= LINKS ================= */
 a {
-  color: #4f533d;
+  color: #60a5fa;
+  text-decoration: none;
+  transition: var(--transition);
 }
+
 a:hover {
-  color: #e3dbbb;
+  color: #c084fc;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.7);
 }
 
+/* ================= TEXTAREA ================= */
 #rmk {
-  background-color: #e3dbbb;
-}
-button {
-  border-radius: 35px;
-  background-color: #dfc5a9;
-  box-sizing: border-box;
-}
-button:hover {
-  background-color: #4a4034;
-  color: #bfa181;
+  background: #f1f5f9;
+  border-radius: 8px;
+  border: none;
+  padding: 6px;
+  transition: var(--transition);
 }
 
+#rmk:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+
+/* ================= BUTTON ================= */
+button {
+  background: var(--gradient-main);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.5);
+}
+
+/* ================= CHECKBOX ================= */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.4);
+}
+
+/* ================= FOOTER IMAGE ================= */
 footer img {
-  border-radius: 70%;
-  object-fit: cover;
-  border: 3px solid #4a4034;
-  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  transition: var(--transition);
+}
+
+footer img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* ================= FOOTER LINKS ================= */
+.ef {
+  color: var(--accent);
+  transition: var(--transition);
 }
 
 .ef:hover {
-  background-blend-mode: difference;
-  color: #010101;
-  background-blend-mode: color-burn;
+  color: #facc15;
+  text-decoration: underline;
+}
+
+/* ================= ANIMATIONS ================= */
+
+/* Fade in whole page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide down title */
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Fade up cards */
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Floating effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Glow pulse */
+@keyframes glow {
+  0% { box-shadow: 0 0 0px rgba(168,85,247,0.4); }
+  50% { box-shadow: 0 0 20px rgba(168,85,247,0.8); }
+  100% { box-shadow: 0 0 0px rgba(168,85,247,0.4); }
+}
+
+/* Apply glow to button */
+button:hover {
+  animation: glow 1s infinite;
 }
