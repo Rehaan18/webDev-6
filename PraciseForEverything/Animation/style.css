@@ -1,0 +1,84 @@
+#box1
+{
+    width: 250px;
+    height: 250px;
+    background-color: blanchedalmond;
+    font-size: 225px;
+    text-align: center;
+
+    /* animation: myslide;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: ease ;
+    animation-duration: 5s; */
+
+   
+}
+
+/* #box1:hover
+{
+     duration,timing function,delay,iteration count,play state, name 
+    animation: 3s linear 0s infinite running myslide; 
+} */
+/* 
+#box1:active
+{
+    
+    animation: 3s linear 0s infinite running rotate;
+} */
+/* #box1:active
+{
+    
+    animation: 3s linear 0s infinite running Scale;
+} */
+#box1:hover
+{
+    
+    animation: 10s ease 0s 1 running ColorChange;
+}
+
+@keyframes myslide
+{
+    from{margin-left: 0%;}
+    to{margin-left: 100%}
+}
+
+@keyframes rotate
+{
+    100%{transform: rotateX(360deg)}
+}
+
+@keyframes Scale
+{
+    50%{transform: scale(0.5 , 0.5)}
+}
+
+@keyframes ColorChange
+{
+    0%
+    {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+    25%
+    {
+        background-color: rgb(187, 119, 230);
+        transform: translate(400px, 0);
+    }
+    50%
+    {
+        background-color: green;
+        transform: translate(400px, 200px);
+    }
+    75% 
+    {
+        background-color: rgb(123, 211, 222);
+        transform: translate(0, 200px);
+    }
+    100%
+    {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+}

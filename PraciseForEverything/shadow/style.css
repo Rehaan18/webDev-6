@@ -1,0 +1,17 @@
+h1
+{
+    /* first number is for the x axis and the second number is for the y
+    axis and the 3 number is for the spread and then comes the color */
+   text-shadow: 0px 0px 5px rgb(253, 246, 106), 0px -5px 5px red ; 
+  
+}
+h1:hover
+{
+     box-shadow: 5px 5px 5px black; 
+}
+
+.fa-youtube
+{
+    color: rgb(255, 0, 0);
+    size: 40px;
+}

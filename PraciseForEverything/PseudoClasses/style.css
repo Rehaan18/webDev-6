@@ -1,0 +1,55 @@
+a:link
+{
+    color: blanchedalmond;
+}
+
+/* any link that has been visited is shown in purple and to change that
+we use the below */
+
+a:visited
+{
+    color: rgb(139, 101, 51);
+}
+
+/* when we move our curor to that element and we want some change so we use */
+a:hover
+{
+    color: rgb(8, 112, 112);
+}
+
+/* now if we hold on to the element with our mouse and we want some
+changes we use  */
+a:active
+{
+    color: brown;
+}
+
+button:hover
+{
+    background-color: antiquewhite;
+    color: rgb(3, 4, 4);
+}
+button:active
+{
+    background-color: rgb(121, 205, 166);
+    color: rgb(3, 4, 4);
+}
+
+
+/* now for the list items there is this pseudo class */
+/* li:nth-child(7)
+{
+    background-color: rgb(237, 166, 166);
+} */
+/* li:nth-child(even)
+{
+    background-color: rgb(166, 218, 237);
+} */
+/* li:nth-child(odd)
+{
+    background-color: rgb(109, 189, 218);
+} */
+ li:nth-child(3n+1)  /*in this every 3rd element is highlighted where if you add a number then that number will affected first and then the the number with n */
+{
+    background-color: rgb(233, 241, 121);
+}
