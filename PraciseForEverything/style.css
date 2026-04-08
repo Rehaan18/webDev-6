@@ -1,0 +1,50 @@
+body
+{
+     /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+     background-repeat: no-repeat; since the gradiant repeats itself once it reaches the last element we use this 
+     background-attachment: fixed; */
+     background-image: url(landscape.jpg);
+     background-repeat: no-repeat;  
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+}
+
+h1
+{
+    color: rgb(226, 217, 217);
+    font-family: "Boldonse" ;
+    
+}
+span
+{
+    text-decoration:rgb(17, 20, 20) solid underline ;
+    border-top-style: solid;
+    border-left-style: groove;
+    border-top-width: 2px;
+    border-top-left-radius: 20px;
+    padding: 10px;
+}
+
+p
+{
+    background-color: rgb(242, 210, 171);
+    font-family: "Boldonse";
+    font-style: oblique;
+    font-weight: lighter;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 6px;
+    background: linear-gradient(to right, #efd5ff 0%, #515ada 100%);
+}
+
+.odd
+{
+    color: rgb(8, 4, 4);
+}
+.even
+{
+    color: rgb(58, 103, 13);
+    font-weight: 900;
+    
+}

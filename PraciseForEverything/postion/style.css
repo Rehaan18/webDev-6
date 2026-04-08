@@ -1,0 +1,24 @@
+#box1 {
+  border: 1px soldi;
+  height: 300px;
+  width: 300px;
+  background-color: blanchedalmond;
+
+   /* position: relative; In CSS, position: relative; means an element is moved from its original, natural spot on the webpage.
+    top: 200px;
+    left: 250px; */
+    /* position: fixed;  it will stay in your position of the viewport 
+    top: 0px;
+    right:0px ; */
+    position: sticky;
+     top: 0px; /*it is gonna stick when we scroll past it..in this case we will stick to the top when we scroll past to it */
+    }
+#box2 {
+  border: 0px solid;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(194, 122, 16);
+  position: absolute; /*assume it as a ghost as the docuent or the webpage ignore that elements but it stays there only */
+  top: 100px; /*any element that is absolutely positioned will search for any parents that is positioned non statically if it doesnt have a parent it will instead use the veiwport */
+  left: 100px;
+}
