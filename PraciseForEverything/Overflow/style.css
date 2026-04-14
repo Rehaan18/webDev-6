@@ -1,0 +1,11 @@
+div
+{
+    border: 2px solid;
+    height: 75px;
+     overflow: visible; /*overflowed content will be shown */
+     overflow: hidden; /*overflowed content will not be shown */
+     overflow: clip; /*overflowed content will not be shown */
+     overflow-clip-margin: 13px; /*it will overflow by this amount they are used together*/
+     overflow: scroll; /*it gets a scroll bar */
+     overflow: auto; /*it gets a scroll bar automatically when needed*/
+}
