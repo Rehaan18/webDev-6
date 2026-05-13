@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(172, 242, 245);
+  font-family: Arial, sans-serif;
+}
+
+.bill-card {
+  width: 100%;
+  max-width: 450px;
+  background: #7babf3;
+  padding: 30px;
+  border-radius: 20px;
+  color: black;
+}
+
+input {
+  height: 50px;
+}
+
+.btn {
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 15px;
+}
