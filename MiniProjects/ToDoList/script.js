@@ -9,14 +9,15 @@ function addNewTask() {
   SPAN1.innerText = taskToAdd;
   const BUTTON = document.createElement("button");
   BUTTON.classList.add(
-    "btn", "btn-danger",
+    "btn",
+    "btn-danger",
     "ms-4",
     "d-flex",
     "gap-3",
     "align-items-center",
     "justify-content-center",
   );
-  BUTTON.onclick = ()=>LI.remove();
+  BUTTON.onclick = () => LI.remove();
   const I = document.createElement("i");
   I.classList.add("bi", "bi-trash");
   const SPAN2 = document.createElement("span");
@@ -33,5 +34,31 @@ function addNewTask() {
   document.getElementById("taskdiv").classList.remove("d-none");
 
   document.getElementById("tasklist").appendChild(LI);
+
+  saveToLocalStorage(taskToAdd);
+
   document.getElementById("newTask").value = "";
 }
+
+function saveToLocalStorage(taskToAdd) {
+  // const oldTask = localStorage.getItem(toDoTask)
+
+  const TaskArray = JSON.parse(localStorage.getItem("toDoTask")) || [];
+
+  // TaskArray.push(taskToAdd);
+
+  // console.log(TaskArray);
+
+  const TaskArray = [];
+  TaskArray.push(taskToAdd);
+
+  const newTaskArray = JSON.stringify(TaskArray);
+  localStorage.setItem("toDoTask", newTaskArray);
+}
+
+function getTaskFromLocalStorage() {
+  const TaskArray = JSON.parse(localStorage.getItem("toDoTask")) || [];
+  console.log(TaskArray);
+}
+
+getTaskFromLocalStorage();

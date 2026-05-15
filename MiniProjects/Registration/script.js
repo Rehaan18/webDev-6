@@ -1,4 +1,3 @@
-// Submit Button
 document
   .querySelector(".btn-submit")
   .addEventListener("click", function (event) {
