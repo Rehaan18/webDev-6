@@ -1,0 +1,92 @@
+[
+  {
+    "Country": "UNITED STATES",
+    "Currency": "US Dollar",
+    "Currency_Code": "usd",
+    "Country_Code": "US"
+  },
+  {
+    "Country": "INDIA",
+    "Currency": "Indian Rupee",
+    "Currency_Code": "inr",
+    "Country_Code": "IN"
+  },
+  {
+    "Country": "UNITED KINGDOM",
+    "Currency": "British Pound",
+    "Currency_Code": "gbp",
+    "Country_Code": "GB"
+  },
+  {
+    "Country": "EUROPEAN UNION",
+    "Currency": "Euro",
+    "Currency_Code": "eur",
+    "Country_Code": "FR"
+  },
+  {
+    "Country": "JAPAN",
+    "Currency": "Japanese Yen",
+    "Currency_Code": "jpy",
+    "Country_Code": "JP"
+  },
+  {
+    "Country": "CHINA",
+    "Currency": "Chinese Yuan",
+    "Currency_Code": "cny",
+    "Country_Code": "CN"
+  },
+  {
+    "Country": "CANADA",
+    "Currency": "Canadian Dollar",
+    "Currency_Code": "cad",
+    "Country_Code": "CA"
+  },
+  {
+    "Country": "AUSTRALIA",
+    "Currency": "Australian Dollar",
+    "Currency_Code": "aud",
+    "Country_Code": "AU"
+  },
+  {
+    "Country": "SWITZERLAND",
+    "Currency": "Swiss Franc",
+    "Currency_Code": "chf",
+    "Country_Code": "CH"
+  },
+  {
+    "Country": "SINGAPORE",
+    "Currency": "Singapore Dollar",
+    "Currency_Code": "sgd",
+    "Country_Code": "SG"
+  },
+  {
+    "Country": "UAE",
+    "Currency": "Dirham",
+    "Currency_Code": "aed",
+    "Country_Code": "AE"
+  },
+  {
+    "Country": "RUSSIA",
+    "Currency": "Russian Ruble",
+    "Currency_Code": "rub",
+    "Country_Code": "RU"
+  },
+  {
+    "Country": "BRAZIL",
+    "Currency": "Brazilian Real",
+    "Currency_Code": "brl",
+    "Country_Code": "BR"
+  },
+  {
+    "Country": "SOUTH AFRICA",
+    "Currency": "Rand",
+    "Currency_Code": "zar",
+    "Country_Code": "ZA"
+  },
+  {
+    "Country": "PAKISTAN",
+    "Currency": "Pakistani Rupee",
+    "Currency_Code": "pkr",
+    "Country_Code": "PK"
+  }
+]
