@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import { AiFillAccountBook } from "react-icons/ai";
+
 
 function Header() {
     return (
         <>
         <div className="bg-primary-subtle p-2 d-flex justify-content-between align-items-center">
 
-            <div className="text-primary fs-4 fw-bold">My Company</div>
+            <div className="text-primary fs-4 fw-bold"> <AiFillAccountBook className=" align-items-center md-1"/>My Company</div>
 
             <div className="d-flex gap-4">
                 <Link to="/">Home</Link>
