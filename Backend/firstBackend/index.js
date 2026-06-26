@@ -20,9 +20,12 @@ app.get("/", (req, res) => {
 
 //default error handler
 
-app.use((err, req,res,next) => {
-  
-})
+app.use((err, req, res, next) => {
+  const ErrMessage = err.message || "Internal Server Error";
+  const ErrStausCode = err.statusCode || 500;
+
+  res.status(ErrStausCode).json({ message: ErrMessage });
+});
 
 
 const port = process.env.PORT || 5000;
