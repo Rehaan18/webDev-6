@@ -1,7 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const { user, setUser, isLogin, setIsLogin} = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    sessionStorage.removeItem("UserData");
+
+
+  }
   return (
     <>
       <div className="bg-(--primary) text-lg text-(--primary-text) p-3 flex justify-between">
