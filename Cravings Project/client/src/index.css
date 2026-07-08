@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Archivo Black", sans-serif;
+}
+* {
+
+  box-sizing: border-box;
+}
+body {
+  font-family: "Archivo Black", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+:root {
+  /* Primary */
+  --color-primary: #0d9488;
+  --color-primary-content: #ffffff;
+
+  /* Secondary */
+  --color-secondary: #64748b;
+  --color-secondary-content: #ffffff;
+
+  /* Accent */
+  --color-accent: #f97316;
+  --color-accent-content: #ffffff;
+
+  /* Neutral */
+  --color-neutral: #1e293b;
+  --color-neutral-content: #f1f5f9;
+
+  /* Base Surfaces */
+  --color-base-100: #f8fafc;
+  --color-base-200: #eef2f6;
+  --color-base-300: #dde3ea;
+  --color-base-content: #0f172a;
+
+  /* Info */
+  --color-info: #0ea5e9;
+  --color-info-content: #ffffff;
+
+  /* Success */
+  --color-success: #22c55e;
+  --color-success-content: #ffffff;
+
+  /* Warning */
+  --color-warning: #f59e0b;
+  --color-warning-content: #1e293b;
+
+  /* Error */
+  --color-error: #ef4444;
+  --color-error-content: #ffffff;
+}
+
+/* Remove number input spinner buttons */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/* Remove password input eye icon */
+input[type="password"]::-ms-reveal {
+  display: none;
+}
