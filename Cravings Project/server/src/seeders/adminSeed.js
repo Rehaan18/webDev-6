@@ -1,10 +1,10 @@
-import User from "../models/user.model";
+import User from "../models/user.model.js";
 import bcrypt from "bcrypt";
 const AdminUser = {
     fullName: "Admin",
     email: "Admin@cravings678.com",
     password:await bcrypt.hash("StrongPassword@123", 10),
-    dob:"2006-18-11",
+    dob:"2006-11-18",
     gender:"other",
     userType: "admin",
     phone: "8890555706",

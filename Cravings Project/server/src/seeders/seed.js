@@ -1,21 +1,23 @@
 import dotenv from 'dotenv';
-import connectDB from '../config/dbConnection.config';
-import adminSeed from './adminSeed';
-dotenv.comfig();
+import connectDB from '../config/dbConnection.config.js';
+import adminSeed from './adminSeed.js';
+import userSeed from './userSeed.js';
+dotenv.config();
 
 
-const Seed = ()=>{
-try {
+const Seed = async () => {
+  try {
     connectDB();
 
     await adminSeed();
-   await userSeed();
-    //call the function which we need to seed
-} catch (error) {
+    await userSeed();
+    //Call The Function which we need to Seed.
+  } catch (error) {
     console.log(error.message);
+  }
+  finally{
     process.exit(1);
-}
-
+  }
 };
 
 Seed();
